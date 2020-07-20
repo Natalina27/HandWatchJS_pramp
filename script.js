@@ -3,12 +3,12 @@ const secondsElement = document.querySelector('.seconds');
 const minutesElement = document.querySelector('.minutes');
 const hoursElement = document.querySelector('.hours');
 
-function setRotation(element, degrees) {
+const  setRotation = (element, degrees) => {
     // Set the rotation and add 90 to default from 12am
     element.style.transform = `rotate(${degrees+90}deg)`;
 }
 
-function updateClockHandsToCurrentTime() {
+const updateClockHandsToCurrentTime = () => {
     // get the current time
     const now = new Date();
 
